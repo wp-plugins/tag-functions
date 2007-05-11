@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: bloertscher
-Donate link: http://example.com/
+Donate link:
 Tags: tags, widgets, sidebar
 Requires at least: 2.3-alpha
 Tested up to: 2.3-alpha
