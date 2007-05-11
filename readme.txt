@@ -1,25 +1,27 @@
 === Plugin Name ===
 Contributors: bloertscher
-Tags: tags
+Donate link: http://example.com/
+Tags: tags, widgets, sidebar
 Requires at least: 2.3-alpha
 Tested up to: 2.3-alpha
-Stable tag: 1.0
+Stable tag: 1.1
 
-This import plugin makes it possible to import tags created with Simple Tagging into the native tagging structure.
+This plugin adds a template function and sidebar widget that produces a tag list similar to the category list.
 
 == Description ==
 
-This import plugin allows makes it possible to import tags generated with the [Simple Tagging
-Plugin](http://trac.herewithme.fr/project/simpletagging/) into the new native tagging system implemented in WordPress
-2.3.
+WordPress 2.3alpha now includes native taggin abilities.  However, there are no functions to list all available tags
+analagous to wp_list_categories().  This plugin's purpose is to add those functions.  They are essentially a copy of
+category templates modified for tags.  This plugin also adds a sidebar widget making it easy to add a tag list to a
+widget-enabled theme.
+
+Once this plugin is enabled, the template function btl_list_cateogories() will be available.  The function will take the
+same parameters as [wp_list_categories](http://codex.wordpress.org/Template_Tags/wp_list_categories).
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload `stp.php` to the `/wp-admin/import/` directory
-1. Navigate to the Manage -> Import screen in the WordPress administration interface.
-1. Click on the Simple Tagging link and follow the instructions.
+1. Upload `btl_tag_functions.php` to the `/wp-content/plugins/` directory
+1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Place `<?php btl_list_functions() ?>` in your templates
+1. Alternatively, a Tags widget will be available as a sidebar widget under Presentation -> Widgets.
 
