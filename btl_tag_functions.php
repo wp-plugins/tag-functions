@@ -1,10 +1,11 @@
 <?php 
 /*
 Plugin Name: Tag Functions
-Plugin URI: http://wordpress.org/extend/plugins/tag-functions/
+Plugin URI: http://wordpress.org/#
 Description: This plugin adds the ability to create a list of tags, similar to a category list.
 Author: Brent Loertscher
-Version: 1.2
+Version: 1.3
+Author URI: http://photomatt.net/
 */ 
 
 class Walker_Tag extends Walker {
@@ -332,8 +333,13 @@ function widget_tags_init () {
    <?php
    }
 
-   wp_register_sidebar_widget('tags', __('Tags'), 'btl_widget_tags', $class);
-   wp_register_widget_control('tags', __('Tags'), 'btl_widget_tags_control', $dims150);
+   if (function_exists('wp_register_sidebar_widget')) {
+      wp_register_sidebar_widget('tags', __('Tags'), 'btl_widget_tags', $class);
+      wp_register_widget_control('tags', __('Tags'), 'btl_widget_tags_control', $dims150);
+   } else {
+      register_sidebar_widget ('tags', 'btl_widget_tags');
+      register_widget_control ('tags', 'btl_widget_tags_control', 300, 100);
+   }
 }
 
 add_action ('widgets_init', 'widget_tags_init');
