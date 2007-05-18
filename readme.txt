@@ -4,7 +4,7 @@ Donate link:
 Tags: tags, widgets, sidebar
 Requires at least: 2.3-alpha
 Tested up to: 2.3-alpha
-Stable tag: 1.3
+Stable tag: 1.4
 
 This plugin adds a template function and sidebar widget that produces a tag list similar to the category list.
 

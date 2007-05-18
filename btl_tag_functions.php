@@ -1,11 +1,11 @@
 <?php 
 /*
 Plugin Name: Tag Functions
-Plugin URI: http://wordpress.org/#
+Plugin URI: http://wordpress.org/extend/plugins/tag-functions/
 Description: This plugin adds the ability to create a list of tags, similar to a category list.
 Author: Brent Loertscher
-Version: 1.3
-Author URI: http://photomatt.net/
+Version: 1.4
+Author URI: 
 */ 
 
 class Walker_Tag extends Walker {
