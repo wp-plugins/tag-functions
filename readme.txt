@@ -4,7 +4,7 @@ Donate link:
 Tags: tags, widgets, sidebar
 Requires at least: 2.3-alpha
 Tested up to: 2.3-alpha
-Stable tag: 1.4
+Stable tag: 1.5
 
 This plugin adds a template function and sidebar widget that produces a tag list similar to the category list.
 
@@ -17,6 +17,8 @@ widget-enabled theme.
 
 Once this plugin is enabled, the template function `btl_list_categories()` will be available.  The function will take the
 same parameters as [`wp_list_categories()`](http://codex.wordpress.org/Template_Tags/wp_list_categories).
+
+This plugin has been updated for use with the new tag hierarchy.
 
 == Installation ==
 
